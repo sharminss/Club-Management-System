@@ -1,0 +1,664 @@
+<ul class="nav nav-pills nav-stacked" style=" margin-top: 20px;">
+	   <li class="active" ><a  id="About" href="About.php" style="font-size: 14px;padding: 10px; text-align: center; color: #fff" > 
+	  <?php
+		 
+                 $conn=mysqli_connect("localhost","root","","literatute_club"); 
+
+				$eql="SELECT * FROM catagories where id=1";
+              $result = $conn->query($eql);
+		  while($row = $result->fetch_assoc()) 
+		  {
+			  echo '
+	      <label value="'.$row['cat'].'">'.$row['cat'].'</label>
+		  </a> <button type="submit" data-toggle="modal" data-target="#myModal11">edit</button>
+		    <div class="modal fade" id="myModal11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Content Name</h4>
+      </div>
+      <div class="modal-body">
+	  <form action="Content_update/content_update_workspace.php" method="get">
+	  <div class="form-group" hidden>
+				    <label for="">ID:</label>
+				    <input type="text" class="form-control" name="coid" id="head" value="'.$row['id'].'" readonly>
+				  </div>
+	  <div class="form-group">
+				    <label for="">Name: </label>
+				    <input type="text" class="form-control" name="coname" id="head" value="'.$row['cat'].'" required>
+				  </div>
+	   
+     
+
+<button type="submit" class="btn-primary">UPDATE</button>
+</form>
+
+       
+	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+		';
+		  
+		   break;
+		  }
+		  ?> 
+	   
+		  
+		 </li>
+	    
+       </ul>
+	   	  <ul class="nav nav-pills nav-stacked" style=" margin-top: 20px;">
+
+	   <li class="active" ><a  id=""  href="Notice.php" style="font-size: 14px;padding: 10px; text-align: center; color: #fff" > <span class=""  style="margin-right: 10px" aria-hidden="true"></span>
+	   <?php
+		 
+                 $conn=mysqli_connect("localhost","root","","literatute_club"); 
+
+				$eql="SELECT * FROM catagories where id=9";
+              $result = $conn->query($eql);
+		  while($row = $result->fetch_assoc()) 
+		  {
+			  echo '
+	      <label value="'.$row['cat'].'">'.$row['cat'].'</label>
+		  </a> <button type="submit" data-toggle="modal" data-target="#myModal12">edit</button>
+		    <div class="modal fade" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Content Name</h4>
+      </div>
+      <div class="modal-body">
+	  <form action="Content_update/content_update_workspace.php" method="get">
+	  <div class="form-group"hidden>
+				    <label for="">ID:</label>
+				    <input type="text" class="form-control" name="coid" id="head" value="'.$row['id'].'" readonly>
+				  </div>
+	  <div class="form-group">
+				    <label for="">Name: </label>
+				    <input type="text" class="form-control" name="coname" id="head" value="'.$row['cat'].'" required>
+				  </div>
+
+<button type="submit" class="btn-primary">UPDATE</button>
+</form>
+
+       
+	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+		';
+		  
+		   break;
+		  }
+		  ?> 
+	   
+	   
+	   </li>
+       </ul>
+       <ul class="nav nav-pills nav-stacked" style=" margin-top: 20px;">
+
+	   <li class="active" ><a  id=""  href="event_link.php" style="font-size: 14px;padding: 10px; text-align: center; color: #fff" > <span class=""  style="margin-right: 10px" aria-hidden="true"></span><?php
+		 
+                 $conn=mysqli_connect("localhost","root","","literatute_club"); 
+
+				$eql="SELECT * FROM catagories where id=5";
+              $result = $conn->query($eql);
+		  while($row = $result->fetch_assoc()) 
+		  {
+			  echo '
+	      <label value="'.$row['cat'].'">'.$row['cat'].'</label>
+		  </a> <button type="submit" data-toggle="modal" data-target="#myModal13">edit</button>
+		    <div class="modal fade" id="myModal13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Content Name</h4>
+      </div>
+      <div class="modal-body">
+	  <form action="Content_update/content_update_workspace.php" method="get">
+	<div class="form-group" hidden>
+				    <label for="">ID:</label>
+				    <input type="text" class="form-control" name="coid" id="head" value="'.$row['id'].'" readonly>
+				  </div>
+	  <div class="form-group">
+				    <label for="">Name: </label>
+				    <input type="text" class="form-control" name="coname" id="head" value="'.$row['cat'].'" required>
+				  </div>
+
+<button type="submit" class="btn-primary">UPDATE</button>
+</form>
+
+       
+	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+		';
+		  
+		   break;
+		  }
+		  ?> </li>
+       </ul>
+	   <ul class="nav nav-pills nav-stacked" style=" margin-top: 20px;">
+
+	   <li class="active" ><a  id="" href="breaking.php" style="font-size: 14px;padding: 10px; text-align: center; color: #fff" > <span class=""  style="margin-right: 10px" aria-hidden="true"></span><?php
+		 
+                 $conn=mysqli_connect("localhost","root","","literatute_club"); 
+
+				$eql="SELECT * FROM catagories where id=3";
+              $result = $conn->query($eql);
+		  while($row = $result->fetch_assoc()) 
+		  {
+			  echo '
+	      <label value="'.$row['cat'].'">'.$row['cat'].'</label>
+		  </a> <button type="submit" data-toggle="modal" data-target="#myModal14">edit</button>
+		    <div class="modal fade" id="myModal14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Content Name</h4>
+      </div>
+      <div class="modal-body">
+	  <form action="Content_update/content_update_workspace.php" method="get">
+	 <div class="form-group" hidden>
+				    <label for="">ID:</label>
+				    <input type="text" class="form-control" name="coid" id="head" value="'.$row['id'].'" readonly>
+				  </div>
+	  <div class="form-group">
+				    <label for="">Name: </label>
+				    <input type="text" class="form-control" name="coname" id="head" value="'.$row['cat'].'" required>
+				  </div>
+
+<button type="submit" class="btn-primary">UPDATE</button>
+</form>
+
+       
+	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+		';
+		  
+		   break;
+		  }
+		  ?> </li>
+       </ul>
+	   <ul class="nav nav-pills nav-stacked" style=" margin-top: 20px;">
+
+	   <li class="active" ><a  id="" href="prev_event.php" style="font-size: 14px;padding: 10px; text-align: center; color: #fff" > <span class=""  style="margin-right: 10px" aria-hidden="true"></span>
+	   <?php
+		 
+                 $conn=mysqli_connect("localhost","root","","literatute_club"); 
+
+				$eql="SELECT * FROM catagories where id=10";
+              $result = $conn->query($eql);
+		  while($row = $result->fetch_assoc()) 
+		  {
+			  echo '
+	      <label value="'.$row['cat'].'">'.$row['cat'].'</label>
+		  </a> <button type="submit" data-toggle="modal" data-target="#myModal15">edit</button>
+		    <div class="modal fade" id="myModal15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Content Name</h4>
+      </div>
+      <div class="modal-body">
+	  <form action="Content_update/content_update_workspace.php" method="get">
+	  <div class="form-group" hidden>
+				    <label for="">ID:</label>
+				    <input type="text" class="form-control" name="coid" id="head" value="'.$row['id'].'" readonly>
+				  </div>
+	  <div class="form-group">
+				    <label for="">Name: </label>
+				    <input type="text" class="form-control" name="coname" id="head" value="'.$row['cat'].'" required>
+				  </div>
+
+<button type="submit" class="btn-primary">UPDATE</button>
+</form>
+
+       
+	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+		';
+		  
+		   break;
+		  }
+		  ?> </li>
+       </ul>
+	   <ul class="nav nav-pills nav-stacked" style=" margin-top: 20px;">
+
+	   <li class="active" ><a  id="" href="activities.php" style="font-size: 14px;padding: 10px; text-align: center; color: #fff" > <span class=""  style="margin-right: 10px" aria-hidden="true"></span><?php
+		 
+                 $conn=mysqli_connect("localhost","root","","literatute_club"); 
+
+				$eql="SELECT * FROM catagories where id=2";
+              $result = $conn->query($eql);
+		  while($row = $result->fetch_assoc()) 
+		  {
+			  echo '
+	      <label value="'.$row['cat'].'">'.$row['cat'].'</label>
+		  </a> <button type="submit" data-toggle="modal" data-target="#myModal16">edit</button>
+		    <div class="modal fade" id="myModal16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Content Name</h4>
+      </div>
+      <div class="modal-body">
+	  <form action="Content_update/content_update_workspace.php" method="get">
+	  <div class="form-group" hidden>
+				    <label for="">ID:</label>
+				    <input type="text" class="form-control" name="coid" id="head" value="'.$row['id'].'" readonly>
+				  </div>
+	  <div class="form-group">
+				    <label for="">Name: </label>
+				    <input type="text" class="form-control" name="coname" id="head" value="'.$row['cat'].'" required>
+				  </div>
+
+<button type="submit" class="btn-primary">UPDATE</button>
+</form>
+
+       
+	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+		';
+		  
+		   break;
+		  }
+		  ?> </li>
+       </ul>
+	   <ul class="nav nav-pills nav-stacked" style=" margin-top: 20px;">
+
+	   <li class="active" ><a  id="" href="messeges.php"  style="font-size: 14px;padding: 10px; text-align: center; color: #fff" > <span class=""  style="margin-right: 10px" aria-hidden="true"></span>
+	   <?php
+		 
+                 $conn=mysqli_connect("localhost","root","","literatute_club"); 
+
+				$eql="SELECT * FROM catagories where id=8";
+              $result = $conn->query($eql);
+		  while($row = $result->fetch_assoc()) 
+		  {
+			  echo '
+	      <label value="'.$row['cat'].'">'.$row['cat'].'</label>
+		  </a> <button type="submit" data-toggle="modal" data-target="#myModal17">edit</button>
+		    <div class="modal fade" id="myModal17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Content Name</h4>
+      </div>
+      <div class="modal-body">
+	  <form action="Content_update/content_update_workspace.php" method="get">
+	  <div class="form-group" hidden>
+				    <label for="">ID:</label>
+				    <input type="text" class="form-control" name="coid" id="head" value="'.$row['id'].'" readonly>
+				  </div>
+	  <div class="form-group">
+				    <label for="">Name: </label>
+				    <input type="text" class="form-control" name="coname" id="head" value="'.$row['cat'].'" required>
+				  </div>
+<button type="submit" class="btn-primary">UPDATE</button>
+</form>
+
+       
+	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+		';
+		  
+		   break;
+		  }
+		  ?> </li>
+       </ul>
+	   <ul class="nav nav-pills nav-stacked" style=" margin-top: 20px;">
+
+	   <li class="active" ><a  id="" href="up_event.php" style="font-size: 14px;padding: 10px; text-align: center; color: #fff" > <span class=""  style="margin-right: 10px" aria-hidden="true"></span>
+	   <?php
+		 
+                 $conn=mysqli_connect("localhost","root","","literatute_club"); 
+
+				$eql="SELECT * FROM catagories where id=12";
+              $result = $conn->query($eql);
+		  while($row = $result->fetch_assoc()) 
+		  {
+			  echo '
+	      <label value="'.$row['cat'].'">'.$row['cat'].'</label>
+		  </a> <button type="submit" data-toggle="modal" data-target="#myModal18">edit</button>
+		    <div class="modal fade" id="myModal18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Content Name</h4>
+      </div>
+      <div class="modal-body">
+	  <form action="Content_update/content_update_workspace.php" method="get">
+	  <div class="form-group" hidden>
+				    <label for="">ID:</label>
+				    <input type="text" class="form-control" name="coid" id="head" value="'.$row['id'].'" readonly>
+				  </div>
+	  <div class="form-group">
+				    <label for="">Name: </label>
+				    <input type="text" class="form-control" name="coname" id="head" value="'.$row['cat'].'" required>
+				  </div>
+<button type="submit" class="btn-primary">UPDATE</button>
+</form>
+
+       
+	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+		';
+		  
+		   break;
+		  }
+		  ?> </li>
+       </ul>
+	   <ul class="nav nav-pills nav-stacked" style=" margin-top: 20px;">
+
+	   <li class="active" ><a  id="" href="stories.php"  style="font-size: 14px;padding: 10px; text-align: center; color: #fff" > <span class=""  style="margin-right: 10px" aria-hidden="true"></span>
+	   <?php
+		 
+                 $conn=mysqli_connect("localhost","root","","literatute_club"); 
+
+				$eql="SELECT * FROM catagories where id=11";
+              $result = $conn->query($eql);
+		  while($row = $result->fetch_assoc()) 
+		  {
+			  echo '
+	      <label value="'.$row['cat'].'">'.$row['cat'].'</label>
+		  </a> <button type="submit" data-toggle="modal" data-target="#myModal19">edit</button>
+		    <div class="modal fade" id="myModal19" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Content Name</h4>
+      </div>
+      <div class="modal-body">
+	  <form action="Content_update/content_update_workspace.php" method="get">
+	<div class="form-group" hidden>
+				    <label for="">ID:</label>
+				    <input type="text" class="form-control" name="coid" id="head" value="'.$row['id'].'" readonly>
+				  </div>
+	  <div class="form-group">
+				    <label for="">Name: </label>
+				    <input type="text" class="form-control" name="coname" id="head" value="'.$row['cat'].'" required>
+				  </div>
+
+<button type="submit" class="btn-primary">UPDATE</button>
+</form>
+
+       
+	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+		';
+		  
+		   break;
+		  }
+		  ?> </li>
+       </ul>
+	   <ul class="nav nav-pills nav-stacked" style=" margin-top: 20px;">
+
+	   <li class="active" ><a  id=""href="#"  style="font-size: 14px;padding: 10px; text-align: center; color: #fff" > <span class=""  style="margin-right: 10px" aria-hidden="true"></span>
+	   <?php
+		 
+                 $conn=mysqli_connect("localhost","root","","literatute_club"); 
+
+				$eql="SELECT * FROM catagories where id=13";
+              $result = $conn->query($eql);
+		  while($row = $result->fetch_assoc()) 
+		  {
+			  echo '
+	      <label value="'.$row['cat'].'">'.$row['cat'].'</label>
+		  </a> <button type="submit" data-toggle="modal" data-target="#myModal110">edit</button>
+		    <div class="modal fade" id="myModal110" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Content Name</h4>
+      </div>
+      <div class="modal-body">
+	  <form action="Content_update/content_update_workspace.php" method="get">
+	 <div class="form-group" hidden>
+				    <label for="">ID:</label>
+				    <input type="text" class="form-control" name="coid" id="head" value="'.$row['id'].'" readonly>
+				  </div>
+	  <div class="form-group">
+				    <label for="">Name: </label>
+				    <input type="text" class="form-control" name="coname" id="head" value="'.$row['cat'].'" required>
+				  </div>
+
+<button type="submit" class="btn-primary">UPDATE</button>
+</form>
+
+       
+	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+		';
+		  
+		   break;
+		  }
+		  ?> </li>
+       </ul>
+	   <ul class="nav nav-pills nav-stacked" style=" margin-top: 20px;">
+
+	   <li class="active" ><a  id=""  href="follow.php"style="font-size: 14px;padding: 10px; text-align: center; color: #fff" > <span class=""  style="margin-right: 10px" aria-hidden="true"></span><?php
+		 
+                 $conn=mysqli_connect("localhost","root","","literatute_club"); 
+
+				$eql="SELECT * FROM catagories where id=6";
+              $result = $conn->query($eql);
+		  while($row = $result->fetch_assoc()) 
+		  {
+			  echo '
+	      <label value="'.$row['cat'].'">'.$row['cat'].'</label>
+		  </a> <button type="submit" data-toggle="modal" data-target="#myModal111">edit</button>
+		    <div class="modal fade" id="myModal111" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Content Name</h4>
+      </div>
+      <div class="modal-body">
+	  <form action="Content_update/content_update_workspace.php" method="get">
+	  <div class="form-group" hidden>
+				    <label for="">ID:</label>
+				    <input type="text" class="form-control" name="coid" id="head" value="'.$row['id'].'" readonly>
+				  </div>
+	  <div class="form-group">
+				    <label for="">Name: </label>
+				    <input type="text" class="form-control" name="coname" id="head" value="'.$row['cat'].'" required>
+				  </div>
+
+<button type="submit" class="btn-primary">UPDATE</button>
+</form>
+
+       
+	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+		';
+		  
+		   break;
+		  }
+		  ?> </li>
+       </ul>
+	   <ul class="nav nav-pills nav-stacked" style=" margin-top: 20px;">
+
+	   <li class="active" ><a  id="" href="location.php" style="font-size: 14px;padding: 10px; text-align: center; color: #fff" > <span class=""  style="margin-right: 10px" aria-hidden="true"></span>
+	   <?php
+		 
+                 $conn=mysqli_connect("localhost","root","","literatute_club"); 
+
+				$eql="SELECT * FROM catagories where id=7";
+              $result = $conn->query($eql);
+		  while($row = $result->fetch_assoc()) 
+		  {
+			  echo '
+	      <label value="'.$row['cat'].'">'.$row['cat'].'</label>
+		  </a> <button type="submit" data-toggle="modal" data-target="#myModal112">edit</button>
+		    <div class="modal fade" id="myModal112" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Content Name</h4>
+      </div>
+      <div class="modal-body">
+	  <form action="Content_update/content_update_workspace.php" method="get">
+	  <div class="form-group" hidden>
+				    <label for="">ID:</label>
+				    <input type="text" class="form-control" name="coid" id="head" value="'.$row['id'].'" readonly>
+				  </div>
+	  <div class="form-group">
+				    <label for="">Name: </label>
+				    <input type="text" class="form-control" name="coname" id="head" value="'.$row['cat'].'" required>
+				  </div>
+
+<button type="submit" class="btn-primary">UPDATE</button>
+</form>
+
+       
+	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+		';
+		  
+		   break;
+		  }
+		  ?> </li>
+       </ul>
+	   <ul class="nav nav-pills nav-stacked" style=" margin-top: 20px;">
+
+	   <li class="active" ><a  id="" href="email&phone.php"  style="font-size: 14px;padding: 10px; text-align: center; color: #fff" > <span class=""  style="margin-right: 10px" aria-hidden="true"></span><?php
+		 
+                 $conn=mysqli_connect("localhost","root","","literatute_club"); 
+
+				$eql="SELECT * FROM catagories where id=4";
+              $result = $conn->query($eql);
+		  while($row = $result->fetch_assoc()) 
+		  {
+			  echo '
+	      <label value="'.$row['cat'].'">'.$row['cat'].'</label>
+		  </a> <button type="submit" data-toggle="modal" data-target="#myModal118">edit</button>
+		    <div class="modal fade" id="myModal118" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update Content Name</h4>
+      </div>
+      <div class="modal-body">
+	  <form action="Content_update/content_update_workspace.php" method="get">
+	  <div class="form-group" hidden>
+				    <label for="">ID:</label>
+				    <input type="text" class="form-control" name="coid" id="head" value="'.$row['id'].'" readonly>
+				  </div>
+	  <div class="form-group">
+				    <label for="">Name: </label>
+				    <input type="text" class="form-control" name="coname" id="head" value="'.$row['cat'].'" required>
+				  </div>
+
+<button type="submit" class="btn-primary">UPDATE</button>
+</form>
+
+       
+	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+		';
+		  
+		   break;
+		  }
+		  ?> </li>
+       </ul>
